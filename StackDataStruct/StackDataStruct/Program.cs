@@ -15,6 +15,12 @@ namespace StackDataStruct
             linkListstack.Display();
             linkListstack.Peek();
             linkListstack.Display();
+            Console.WriteLine("\n\nQueue Data Structure :");
+            LinkedListQueue linkedListQueue = new LinkedListQueue();
+            linkedListQueue.Enqueue(56);
+            linkedListQueue.Enqueue(30);
+            linkedListQueue.Enqueue(70);
+            linkedListQueue.Display();
         }
     }
 }
