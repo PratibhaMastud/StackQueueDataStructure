@@ -26,6 +26,27 @@ namespace StackDataStruct
             Console.WriteLine("{0} pushed to stack",data);
         }
 
+        internal void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.Write("Stack empty");
+                return;
+            }
+            Console.WriteLine("Value poped is {0}", this.top.data);
+            this.top = this.top.next;
+        }
+
+        internal void Peek()
+        {
+            if (this.top == null) 
+            {
+                Console.WriteLine("Stack is empty");
+                return;
+            }
+            Console.WriteLine("\n{0} is in the top of the stack",this.top.data);
+        }
+
         internal void Display()
         {
             Node temp = this.top;

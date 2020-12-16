@@ -11,6 +11,10 @@ namespace StackDataStruct
             linkListstack.Push(30);
             linkListstack.Push(56);
             linkListstack.Display();
+            linkListstack.Pop();
+            linkListstack.Display();
+            linkListstack.Peek();
+            linkListstack.Display();
         }
     }
 }
