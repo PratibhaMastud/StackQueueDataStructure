@@ -33,7 +33,7 @@ namespace StackDataStruct
                 Console.Write("Stack empty");
                 return;
             }
-            Console.WriteLine("Value poped is {0}", this.top.data);
+            Console.WriteLine("\nValue poped is {0}", this.top.data);
             this.top = this.top.next;
         }
 

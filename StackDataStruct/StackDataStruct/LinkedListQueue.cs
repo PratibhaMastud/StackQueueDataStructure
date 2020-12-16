@@ -43,8 +43,23 @@ namespace StackDataStruct
             }
             while (temp != null)
             {
-                Console.WriteLine(temp.data + "-->");
+                Console.Write(temp.data + "-->");
                 temp = temp.next;
+            }
+        }
+        /// <summary>
+        /// Dequeue Elements from the Queue
+        /// </summary>
+        internal void Dequeue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Queue is empty");
+            }
+            else
+            {
+                Console.WriteLine("\n{0} is Dequeued from the Queue ", head.data);
+                head = head.next;
             }
         }
     }
